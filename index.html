@@ -284,18 +284,18 @@ footer{text-align:center;font-size:11px;color:var(--ink3);padding:24px 20px 10px
       <div class="countdown" id="countdown"><!-- JS --></div>
       <div class="prep-head">
         <div class="lbl mono">準備状況</div>
-        <div class="counts mono"><span style="color:var(--accent)">OK 6</span><span style="color:var(--warn)">ACTION 2</span><span style="color:var(--ink3)">TBA 2</span></div>
+        <div class="counts mono"><span style="color:var(--accent)">OK 6</span><span style="color:var(--warn)">ACTION 1</span><span style="color:var(--ink3)">TBA 3</span></div>
       </div>
       <div class="prep-bar">
         <div style="flex:6;background:var(--accent)"></div>
-        <div style="flex:2;background:var(--warn)"></div>
-        <div style="flex:2;background:var(--line)"></div>
+        <div style="flex:1;background:var(--warn)"></div>
+        <div style="flex:3;background:var(--line)"></div>
       </div>
       <div class="prep-list">
         <div class="prep-row"><div class="dot" style="background:var(--accent)"></div><div class="body"><div class="t">入場チケット 4件</div><div class="s mono">サグラダ / グエル / バチカン / コロッセオ</div></div><div class="tag tag-ok">CONFIRMED</div></div>
         <div class="prep-row"><div class="dot" style="background:var(--accent)"></div><div class="body"><div class="t">Felice a Testaccio(ローマ)</div><div class="s mono">9/13 19:30・2名(番号は確認メール参照)</div></div><div class="tag tag-ok">OK</div></div>
         <div class="prep-row"><div class="dot" style="background:var(--accent)"></div><div class="body"><div class="t">Can Solé(バルセロナ)</div><div class="s mono">9/18 14:00・バルセロネータ</div></div><div class="tag tag-ok">OK</div></div>
-        <div class="prep-row"><div class="dot" style="background:var(--warn)"></div><div class="body"><div class="t">Roscioli(ローマ)</div><div class="s mono">2〜4週間前に要予約・公式サイト</div></div><div class="tag tag-action">ACTION</div></div>
+        <div class="prep-row"><div class="dot" style="background:var(--ink3)"></div><div class="body"><div class="t">Roscioli(ローマ)</div><div class="s mono">満席のため予約不可(2026-08-17)</div></div><div class="tag tag-wait">満席</div></div>
         <div class="prep-row"><div class="dot" style="background:var(--warn)"></div><div class="body"><div class="t">Armando al Pantheon</div><div class="s mono">オンライン予約のみ受付</div></div><div class="tag tag-action">ACTION</div></div>
         <div class="prep-row"><div class="dot" style="background:var(--ink3)"></div><div class="body"><div class="t">ホテル具体名</div><div class="s mono">最終旅程表で判明予定</div></div><div class="tag tag-wait">WAITING</div></div>
         <div class="prep-row"><div class="dot" style="background:var(--ink3)"></div><div class="body"><div class="t">FCバルセロナ vs ラシン</div><div class="s mono">9/16 キックオフ未発表・到着日</div></div><div class="tag tag-wait">TBA</div></div>
@@ -335,7 +335,7 @@ footer{text-align:center;font-size:11px;color:var(--ink3);padding:24px 20px 10px
   <!-- 食事 -->
   <section class="panel" id="panel-food">
     <div class="card">
-      <h2>優先予約 5軒<span class="tag tag-ok" style="margin-left:8px">OK 2</span><span class="tag tag-action">ACTION 2</span></h2>
+      <h2>優先予約 5軒<span class="tag tag-ok" style="margin-left:8px">OK 2</span><span class="tag tag-action">ACTION 1</span></h2>
       <div id="priorityMeals"><!-- JS --></div>
       <div class="note">💡 5軒のうちどれが下記「日付ごとの食事プラン」の候補と重複するかは未菜さんのメモから確証が持てないため、重複予約に注意してください。</div>
     </div>
@@ -499,7 +499,7 @@ function transitLink(from, to){ return 'https://www.google.com/maps/dir/?api=1&o
 
 /* ---------- 食事データ(優先5軒 + 日付ごと11枠) ---------- */
 const PRIORITY_MEALS = [
-  { id:'meal-roscioli', name:'Roscioli', city:'ローマ', status:'action', desc:'デリ併設のローマ料理店。カルボナーラ・カチョエペペが名物。2〜4週間前に公式サイトから予約推奨。', chips:['カルボナーラ','カチョエペペ'], meta:'+39 06 687 5287 · Via dei Giubbonari 21', link:'https://salumeriaroscioli.com/en/pages/prenota', linkLabel:'公式サイトで予約する', mapsQ:'Roscioli Salumeria con Cucina, Via dei Giubbonari 21, Roma' },
+  { id:'meal-roscioli', name:'Roscioli', city:'ローマ', status:'full', desc:'デリ併設のローマ料理店。カルボナーラ・カチョエペペが名物。2026-08-17にFamiが予約を試みたが満席で不可だった。', chips:['カルボナーラ','カチョエペペ'], meta:'+39 06 687 5287 · Via dei Giubbonari 21', mapsQ:'Roscioli Salumeria con Cucina, Via dei Giubbonari 21, Roma' },
   { id:'meal-felice', name:'Felice a Testaccio', city:'ローマ', status:'ok', meta:'09/13 19:30・2名・SALA INTERNA 1(番号は確認メール参照)', chips:['トンナレッリ・カチョエペペ','アバッキオ'], link:'https://www.feliceatestaccio.com/', linkLabel:'公式サイトを開く', mapsQ:'Felice a Testaccio, Via Mastro Giorgio 29, Roma' },
   { id:'meal-armando', name:'Armando al Pantheon', city:'ローマ', status:'action', desc:'パンテオン近く・1961年創業の老舗・オンライン予約のみ', chips:['サルティンボッカ','アーティチョーク'], link:'https://armandoalpantheon.it/prenota/', linkLabel:'公式サイトで予約する', mapsQ:'Armando al Pantheon, Roma' },
   { id:'meal-tapeo', name:'Tapeo Born', city:'バルセロナ', status:'wait', meta:'+34 933 101 607 · ボルン地区', chips:['市場直送タパス','イベリコ生ハム'], link:'https://www.tapeoborn.cat', linkLabel:'公式サイトを開く', mapsQ:'Tapeo del Born, Carrer de Montcada 29, Barcelona' },
@@ -522,14 +522,15 @@ const MEAL_STATUS_LABEL = { must:'必須', reco:'推奨', plain:'-', resolved:'�
   const pEl = document.getElementById('priorityMeals');
   pEl.innerHTML = PRIORITY_MEALS.map(m => {
     const cls = m.status === 'action' ? 'rcard action' : 'rcard plain';
-    const tag = m.status === 'action' ? '<div class="tag tag-action">ACTION</div>' : (m.status === 'ok' ? '<div class="tag tag-ok">OK</div>' : '<div class="tag tag-wait">推奨</div>');
+    const tag = m.status === 'action' ? '<div class="tag tag-action">ACTION</div>' : (m.status === 'ok' ? '<div class="tag tag-ok">OK</div>' : (m.status === 'full' ? '<div class="tag tag-wait">満席</div>' : '<div class="tag tag-wait">推奨</div>'));
+    const bookLink = m.status === 'full' ? '' : '<a class="achip accent" href="'+m.link+'" target="_blank" rel="noopener">🔗 '+m.linkLabel+'</a>';
     return '<div class="'+cls+'" id="'+m.id+'">'
       + '<div class="rhead"><div class="name"><span class="nm">'+m.name+'</span><span class="city">'+m.city+'</span></div>'+tag+'</div>'
       + (m.desc ? '<div class="rdesc">'+m.desc+'</div>' : '')
       + (m.chips ? '<div class="chips">'+m.chips.map(c=>'<span class="chip">'+c+'</span>').join('')+'</div>' : '')
       + (m.meta ? '<div class="rmeta">'+m.meta+'</div>' : '')
       + '<div class="achips">'
-        + '<a class="achip accent" href="'+m.link+'" target="_blank" rel="noopener">🔗 '+m.linkLabel+'</a>'
+        + bookLink
         + '<a class="achip" href="'+mapsLink(m.mapsQ)+'" target="_blank" rel="noopener">📍 地図で見る</a>'
       + '</div>'
       + '</div>';
