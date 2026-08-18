@@ -126,13 +126,12 @@ nav.tabbar button.active .lbl{font-weight:700;}
 .daypill .pdate{font-size:15px;font-weight:700;line-height:1.15;}
 .daypill .pweekday{font-size:9px;opacity:.85;line-height:1.2;}
 .daypill .pflight{width:14px;height:14px;margin-top:1px;color:var(--gold);flex:none;}
-.daypill.today .pflight{color:var(--accent-ink);}
 .daypill .band{width:100%;height:4px;border-radius:2px;margin-top:auto;background:var(--line);flex:none;}
 .daypill[data-country="roma"] .band{background:var(--gold);}
 .daypill[data-country="barcelona"] .band{background:var(--accent);}
 .daypill[data-country="transit"] .band{background:var(--ink3);}
-.daypill.today{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);}
-.daypill.today .band{background:var(--accent-ink);opacity:.5;}
+.daypill.today{background:var(--card2);border:2px solid var(--ink);color:var(--ink);}
+.daypill.today .daylabel{opacity:1;}
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--ink2);margin-bottom:10px;}
 .legend span{display:inline-flex;align-items:center;gap:5px;}
 .legend i{width:10px;height:10px;border-radius:3px;display:inline-block;}
@@ -141,7 +140,7 @@ nav.tabbar button.active .lbl{font-weight:700;}
 .daycard[data-country="roma"]{border-left-color:var(--gold);}
 .daycard[data-country="barcelona"]{border-left-color:var(--accent);}
 .daycard[data-country="transit"]{border-left-color:var(--ink3);}
-.daycard.today{border-color:var(--accent);background:var(--accent-soft);}
+.daycard.today{border-left-width:6px;background:var(--card2);}
 .dayhead{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:14px;}
 .dayhead .d1{font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;color:var(--accent);}
 .dayhead .d2{font-family:var(--font-serif);font-size:21px;}
