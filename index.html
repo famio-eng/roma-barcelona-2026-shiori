@@ -122,8 +122,8 @@ nav.tabbar button.active .lbl{font-weight:700;}
 .daypills{position:sticky;top:0;z-index:8;background:var(--bg);display:flex;gap:6px;overflow-x:auto;padding:6px 0 12px;margin-bottom:6px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
 .daypills::-webkit-scrollbar{display:none;}
 .daypill{flex:0 0 auto;min-width:52px;height:78px;font-family:var(--font-mono);border:1px solid var(--line);background:var(--card);color:var(--ink3);padding:7px 6px 5px;border-radius:10px;cursor:pointer;text-align:center;display:flex;flex-direction:column;align-items:center;gap:1px;overflow:hidden;}
-.daypill .n{font-size:14px;font-weight:700;line-height:1;}
-.daypill .pdate{font-size:9px;opacity:.85;line-height:1.4;}
+.daypill .daylabel{font-size:8px;font-weight:700;letter-spacing:.06em;opacity:.65;line-height:1.2;}
+.daypill .pdate{font-size:15px;font-weight:700;line-height:1.15;}
 .daypill .pweekday{font-size:9px;opacity:.85;line-height:1.2;}
 .daypill .pflight{width:14px;height:14px;margin-top:1px;color:var(--gold);flex:none;}
 .daypill.today .pflight{color:var(--accent-ink);}
@@ -684,7 +684,7 @@ const DAYS = [
     const dateOnly = dm ? dm[1] : day.date;
     const weekday = dm ? dm[2] : '';
     pillsHtml += '<div class="daypill'+(isToday?' today':'')+'" data-jump="day-'+day.n+'" data-country="'+countryOf(day)+'">'
-      + '<span class="n">'+day.n+'</span>'
+      + '<span class="daylabel">DAY'+day.n+'</span>'
       + '<span class="pdate">'+dateOnly+'</span>'
       + '<span class="pweekday">('+weekday+')</span>'
       + (day.flight ? '<svg class="pflight"><use href="#pic-flight"/></svg>' : '')
