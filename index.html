@@ -558,7 +558,7 @@ const DATED_MEALS = [
   { id:'meal-0914l', day:'9/14', meal:'昼', name:'Osteria da Fortunata', status:'candidate', note:'未菜さんのChatGPT提案リストの候補。行くと決定はしていない', gmaps:'https://maps.app.goo.gl/WsesjUvJsfdtNEPy7?g_st=ic' },
   { id:'meal-0914d', day:'9/14', meal:'夜', name:'Armando al Pantheon', status:'action', jump:'meal-armando' },
   { id:'meal-0915l', day:'9/15', meal:'昼', name:'Tonnarello', status:'candidate', note:'未菜さんのChatGPT提案リストの候補。トラステヴェレ地区。行くと決定はしていない', gmaps:'https://maps.app.goo.gl/2RDhbfTZR56dAxzm7?g_st=ic' },
-  { id:'meal-0915d', day:'9/15', meal:'夜', name:'Emma Pizzeria Restaurant', status:'candidate', note:'未菜さんのChatGPT提案リストの候補。行くと決定はしていない', gmaps:'https://maps.app.goo.gl/DPQQE1xXkxVcGrvNA?g_st=ic' },
+  { id:'meal-0915d', day:'9/15', meal:'夜', name:'Emma Pizzeria con Cucina', status:'ok', note:'予約確定(2026-08-18)：19:30〜・2名(CoverManager経由)。行けない場合は確認メールのリンクから要キャンセル', gmaps:'https://maps.app.goo.gl/DPQQE1xXkxVcGrvNA?g_st=ic' },
   { id:'meal-0916d', day:'9/16', meal:'夜', name:'Bar del Pla', status:'candidate', note:'未菜さんのChatGPT提案リストの候補。行くと決定はしていない', gmaps:'https://maps.app.goo.gl/2mqJCDev9XZerHzW7?g_st=ic' },
   { id:'meal-0917d', day:'9/17', meal:'夜', name:'Tapeo(Tapeo Born)', status:'action', jump:'meal-tapeo' },
   { id:'meal-0918l', day:'9/18', meal:'昼', name:'Can Solé', status:'ok', jump:'meal-cansole' }
@@ -627,7 +627,7 @@ const DAYS = [
     { icon:'walk', time:'終日', t:'カンポ・デ・フィオーリ／ユダヤ人街／テスタッチョ地区', s:'散策', mapsQ:'Campo de\' Fiori, Roma' },
     { icon:'meal', time:'昼', t:'Tonnarello', s:'トラステヴェレ地区・候補(行くか未定)', mealJump:'meal-0915l', attn:'候補', attnType:'candidate' },
     { icon:'landmark', time:'余裕', t:'ヴィラ・ボルゲーゼ公園も候補', s:'公園自体は予約不要', m:'⚠️ただし敷地内のガレリア・ボルゲーゼ美術館(絵画・彫刻)は完全予約制で、当日券なし。行くなら数週間前までの予約が必須', attn:'要予約(美術館)', attnType:'warn', mapsQ:'Villa Borghese, Roma' },
-    { icon:'meal', time:'夜', t:'Emma Pizzeria Restaurant', s:'ローマ最後の夜・候補(行くか未定)', mealJump:'meal-0915d', attn:'候補', attnType:'candidate' }
+    { icon:'meal', time:'19:30', t:'Emma Pizzeria con Cucina', s:'2名・ローマ最後の夜・予約確定', hl:true, mealJump:'meal-0915d' }
   ]},
   { n:5, date:'9/16(水)', city:'移動日', flight:true, items:[
     { icon:'flight', time:'14:05', t:'ローマ(フィウミチーノ)発', s:'AZ76', hl:true },
