@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ローマ・バルセロナ旅行 デジタルしおり</title>
+<title>ローマ・バルセロナ旅行 デジタルしおり(共有版)</title>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <style>
 :root{
@@ -66,7 +66,7 @@ nav.tabbar button.active .lbl{font-weight:700;}
 .ic-overview span{width:9px;height:9px;border-radius:50%;background:currentColor;}
 .ic-schedule span{width:13px;height:9px;border-top:2px solid currentColor;border-bottom:2px solid currentColor;}
 .ic-food span{width:9px;height:9px;border:2px solid currentColor;transform:rotate(45deg);}
-.ic-packing span{width:9px;height:9px;border:2px solid currentColor;}
+.ic-other span{width:13px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;}
 .ic-phrases span{width:14px;height:9px;border:2px solid currentColor;border-radius:4px;}
 
 /* panels */
@@ -277,6 +277,7 @@ footer{text-align:center;font-size:11px;color:var(--ink3);padding:24px 20px 10px
   <header class="top">
     <div>
       <div class="kicker mono">ROMA · BARCELONA 2026</div>
+      <div class="mono" style="display:inline-block;font-size:9px;letter-spacing:.06em;padding:2px 8px;border-radius:999px;background:var(--warn-soft);color:var(--warn);margin:4px 0;">🔗 共有版</div>
       <h1>旅の管制塔</h1>
       <div class="sub">2026/9/12〜9/20・Yusuke &amp; Mina</div>
     </div>
@@ -334,16 +335,6 @@ footer{text-align:center;font-size:11px;color:var(--ink3);padding:24px 20px 10px
       <div class="rdesc" style="margin-top:14px;"><strong>HCC Taber(バルセロナ、9/16〜9/19・3泊)</strong><br>C/ de Aragó, 256, 08007 Barcelona ・ <a href="tel:+34934873887" style="color:var(--accent);">+34-93-487-3887</a><br>エイシャンプレ地区・パセッジ・ダ・グラシア駅至近。<strong>カサ・バトリョまで徒歩2分、カサ・ミラまで徒歩9分</strong>という好立地</div>
       <div class="rdesc" style="margin-top:10px;">耳寄り情報：<a href="https://www.google.com/maps/search/?api=1&query=Cacao+Sampaka+Barcelona" target="_blank" rel="noopener" style="color:var(--accent);font-weight:700;">📍 Cacao Sampaka</a>(チョコレート専門カフェ、Consell de Cent 292)、ホテルのすぐ側の<a href="https://www.google.com/maps/search/?api=1&query=Rambla+de+Catalunya+Barcelona" target="_blank" rel="noopener" style="color:var(--accent);font-weight:700;">📍 Rambla de Catalunya</a>沿いにショップ・レストランが並ぶ</div>
       <div class="rdesc" style="margin-top:10px;">送迎：ローマ到着(9/12)・バルセロナ出発(9/19 02:50ロビー集合)は専用車送迎確定済み。<strong>ローマ→バルセロナ移動日(9/16)のホテル→空港は送迎手配なし</strong>、各自移動</div>
-    </div>
-
-    <div class="card">
-      <h2>💰 総費用内訳</h2>
-      <div class="rdesc"><strong>確定・支払済み</strong></div>
-      <div class="rdesc" style="margin-top:4px;">ツアー代金合計(フライト・宿泊7泊・送迎2回含む)：¥1,393,480<br>コロッセオ・フォロロマーノ・パラティーノの丘(2名)：¥22,116<br>サグラダファミリア 塔付きチケット(2名)：€72<br>グエル公園(2名)：€36<br>パンテオン(2名)：€14</div>
-      <div class="rdesc" style="margin-top:10px;"><strong>現地払い予定・概算</strong></div>
-      <div class="rdesc" style="margin-top:4px;">宿泊税(ローマ、3つ星・2名4泊)：約€56<br>宿泊税(バルセロナ、想定2名3泊)：約€46<br>レストラン各店の飲食代(確定6軒＋自由食事分)：目安€800〜1,200<br>お土産・カフェ・現地交通費等：目安¥30,000〜50,000</div>
-      <div class="rdesc" style="margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);"><strong>総額目安：約¥160万〜170万円</strong>(お二人・9日間、€1=¥185.9換算)</div>
-      <div class="rdesc" style="margin-top:10px;font-size:11px;color:var(--ink3);">※宿泊税はホテルの正確な星数・時期により変動する目安額。最終的な金額はチェックイン時にホテルで確認・支払い。レストラン代は確定6軒がディナー相場の店であることを踏まえた大まかな見積り(実際の飲食代ではなく参考レンジ)。モバイルバッテリー等の汎用電子機器購入は含めていません</div>
     </div>
 
     <div class="card">
@@ -415,7 +406,17 @@ footer{text-align:center;font-size:11px;color:var(--ink3);padding:24px 20px 10px
   </section>
 
   <!-- 持ち物 -->
-  <section class="panel" id="panel-packing">
+  <section class="panel" id="panel-other">
+    <div class="card">
+      <h2>💰 総費用内訳</h2>
+      <div class="rdesc"><strong>確定・支払済み</strong></div>
+      <div class="rdesc" style="margin-top:4px;">ツアー代金合計(フライト・宿泊7泊・送迎2回含む)：¥1,393,480<br>コロッセオ・フォロロマーノ・パラティーノの丘(2名)：¥22,116<br>サグラダファミリア 塔付きチケット(2名)：€72<br>グエル公園(2名)：€36<br>パンテオン(2名)：€14</div>
+      <div class="rdesc" style="margin-top:10px;"><strong>現地払い予定・概算</strong></div>
+      <div class="rdesc" style="margin-top:4px;">宿泊税(ローマ、3つ星・2名4泊)：約€56<br>宿泊税(バルセロナ、想定2名3泊)：約€46<br>レストラン各店の飲食代(確定6軒＋自由食事分)：目安€800〜1,200<br>お土産・カフェ・現地交通費等：目安¥30,000〜50,000</div>
+      <div class="rdesc" style="margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);"><strong>総額目安：約¥160万〜170万円</strong>(お二人・9日間、€1=¥185.9換算)</div>
+      <div class="rdesc" style="margin-top:10px;font-size:11px;color:var(--ink3);">※宿泊税はホテルの正確な星数・時期により変動する目安額。最終的な金額はチェックイン時にホテルで確認・支払い。レストラン代は確定6軒がディナー相場の店であることを踏まえた大まかな見積り(実際の飲食代ではなく参考レンジ)。モバイルバッテリー等の汎用電子機器購入は含めていません</div>
+    </div>
+
     <div class="card">
       <div class="progresshead">
         <div class="t serif">持ち物</div>
@@ -448,9 +449,26 @@ footer{text-align:center;font-size:11px;color:var(--ink3);padding:24px 20px 10px
     </div>
 
     <div class="card">
+      <h2>現地マナー・チップ文化</h2>
+      <div id="culturebox"><!-- JS --></div>
+      <div class="note">上の🇮🇹/🇪🇸切替に連動して表示が変わります</div>
+    </div>
+
+    <div class="card">
       <h2>緊急連絡先</h2>
       <div class="emg-item">
         <div class="emg-row"><div class="t">共通(EU)緊急番号</div><div class="v big mono">112</div></div>
+      </div>
+      <div class="emg-item">
+        <div class="emg-row"><div class="t">現地緊急連絡先(MIKIツーリスト・ローマ日中)</div><div class="v mono">+39-06-84572310</div></div>
+        <div class="rmeta">月〜金9:00-17:00。盗難・事故・送迎トラブル等はこちらへ</div>
+      </div>
+      <div class="emg-item">
+        <div class="emg-row"><div class="t">現地緊急連絡先(MIKIツーリスト・バルセロナ日中)</div><div class="v mono">+34-93-3180266</div></div>
+        <div class="rmeta">月〜金9:00-14:00/15:00-18:00</div>
+      </div>
+      <div class="emg-item">
+        <div class="emg-row"><div class="t">みゅうサポートライン(24時間・時間外用)</div><div class="v mono">+44-20-75075395</div></div>
       </div>
       <div class="emg-item">
         <div class="emg-row"><div class="t">在イタリア日本国大使館(ローマ)</div><div class="v mono">+39-06-487991</div></div>
@@ -478,8 +496,8 @@ footer{text-align:center;font-size:11px;color:var(--ink3);padding:24px 20px 10px
     <button data-tab="overview" class="active"><span class="icon ic-overview"><span></span></span><span class="lbl">概要</span></button>
     <button data-tab="schedule"><span class="icon ic-schedule"><span></span></span><span class="lbl">日程</span></button>
     <button data-tab="food"><span class="icon ic-food"><span></span></span><span class="lbl">食事</span></button>
-    <button data-tab="packing"><span class="icon ic-packing"><span></span></span><span class="lbl">持ち物</span></button>
     <button data-tab="phrases"><span class="icon ic-phrases"><span></span></span><span class="lbl">会話</span></button>
+    <button data-tab="other"><span class="icon ic-other"><span></span></span><span class="lbl">その他</span></button>
   </div>
 </nav>
 
@@ -893,6 +911,28 @@ const PHRASES = {
   ]
 };
 
+const CULTURE = {
+  it: {
+    flag:'🇮🇹', title:'イタリアのチップ・マナー',
+    items:[
+      {t:'基本的な考え方', d:'渡さなくても失礼にはならないが、渡すと好印象。多くの店で「コペルト(席料)」「セルヴィツィオ(サービス料)」が会計に含まれており、それらがチップの代わりになっている'},
+      {t:'レストラン', d:'コペルト/セルヴィツィオが含まれていなければ、端数を切り上げるか5〜10%程度。含まれていれば無理に追加不要'},
+      {t:'ホテル', d:'ベルボーイ：荷物1個1〜2€／ハウスキーピング：1〜2€/泊／コンシェルジュ：頼み事の内容次第で5〜10€'},
+      {t:'タクシー', d:'端数を切り上げる程度で十分'},
+      {t:'⚠️注意', d:'一部で「チップをくれ」としつこく要求してくる、いわゆる「チップくれ詐欺」的な行為も報告あり。義務ではないので、不要な場合は毅然と断って大丈夫'}
+    ]
+  },
+  es: {
+    flag:'🇪🇸', title:'スペインのチップ・マナー',
+    items:[
+      {t:'基本的な考え方', d:'イタリア以上にゆるく、あくまで任意。義務ではなく「最低◯%」のような決まりもない'},
+      {t:'発生しやすい場面', d:'レストラン・バルや4〜5つ星ホテルで、満足した時に気持ち程度渡す文化。3つ星以下のホテル・タクシー・ファストフード・駅・スーパー等では通常不要'},
+      {t:'渡し方', d:'高額紙幣で払った際のお釣りの小銭を、そのままテーブルに残しておく程度でOK。難しく考えなくて良い'},
+      {t:'負担感', d:'日本人にとって心理的ハードルが低いチップ文化。無理に金額を計算する必要はなし'}
+    ]
+  }
+};
+
 (function(){
   const catrowEl = document.getElementById('catrow');
   const listEl = document.getElementById('phraselist');
@@ -916,6 +956,14 @@ const PHRASES = {
   }
   renderList();
 
+  const cultureEl = document.getElementById('culturebox');
+  function renderCulture(){
+    const c = CULTURE[curLang];
+    cultureEl.innerHTML = '<div class="rdesc" style="font-weight:700;margin-bottom:6px;">'+c.flag+' '+c.title+'</div>'
+      + c.items.map(it => '<div class="rdesc" style="margin-top:8px;"><strong>'+it.t+'</strong>：'+it.d+'</div>').join('');
+  }
+  renderCulture();
+
   catrowEl.querySelectorAll('.catpill').forEach(el => {
     el.addEventListener('click', () => {
       curCat = el.dataset.cat;
@@ -928,6 +976,7 @@ const PHRASES = {
       curLang = b.dataset.lang;
       langBtns.forEach(x => x.classList.toggle('active', x === b));
       renderList();
+      renderCulture();
     });
   });
 
